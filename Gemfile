@@ -3,6 +3,16 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
+# Bootstrap-sass
+gem 'bootstrap-sass', '2.0.0'
+# Bcrypt-ruby
+gem 'bcrypt-ruby', '3.0.1'
+# Faker
+gem 'faker', '1.0.1'
+# Will_Paginate
+gem 'will_paginate', '3.0.3'
+# Bootstrap-will_paginate
+gem 'bootstrap-will_paginate', '0.0.6'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -40,13 +50,17 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
-
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  # Annotate
+  gem 'annotate', '~> 2.4.1.beta'
 end
 
 group :test do
   gem 'capybara', '1.1.2'
+  gem 'factory_girl_rails', '1.4.0'
+  gem 'cucumber-rails', '1.2.1', require: false
+  gem 'database_cleaner', '0.7.0'
 end
 
 group :production do
